@@ -1,0 +1,6 @@
+LocalC;local de comida;true;true;Nicolas De Federman;4;500000;30;
+Oficina;casa;false;Barrios unidos;3;800000;40;
+Piso; 2; 240; Salitre; 3; 2000000; 220
+edificio; true; 1000000; 100
+edificio; false; 1000000;120
+Edificio;Johan;Centro Economico; 5; 10000000;700;1;2;
