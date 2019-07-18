@@ -16,7 +16,12 @@ public class Oficina extends Local {
         super(arrendado, Barrio, Estrato, ValorA, AreaC);
         this.tipo = tipo;
     }
-
+    
+    @Override
+    public void DarInfo() {
+        System.out.println("Tipo: "+ this.tipo+" ¿Está arrendado? "+this.arrendado+", Barrio: "+this.Barrio+", Estrato: "+this.Estrato+", Valor arrendamiento: "+this.ValorA+", Area Construida: "+AreaC);   
+    }
+    
     public String getTipo() {
         return tipo;
     }
@@ -65,10 +70,7 @@ public class Oficina extends Local {
         this.AreaC = AreaC;
     }
 
-    @Override
-    public void DarInfo() {
-       
-    }
+
     
     
 }

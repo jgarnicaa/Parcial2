@@ -33,6 +33,14 @@ public class Edificio extends Inmueble{
 
     @Override
     public void DarInfo() {
-       
+        System.out.println("Propietario: "+nombrePro+", Barrio: "+this.Barrio+", Estrato: "+this.Estrato+ ", Valor Arrendamiento: "+ this.ValorA+ "Area Construida: "+this.ValorA);
+        System.out.println("Pisos: ");
+        for(int i=0;i<this.pisos.size();i++){
+        this.pisos.get(i).DarInfo();
+        }
+        System.out.println("Locales Comerciales: ");
+        for(int q=0;q<this.locales.size();q++){
+        this.locales.get(q).DarInfo();
+        }
     }
 }

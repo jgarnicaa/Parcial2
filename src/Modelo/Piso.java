@@ -21,7 +21,14 @@ public class Piso extends Inmueble{
         this.numOfi = numOfi;
         this.AreaT = AreaT;
     }
-    
+            @Override
+    public void DarInfo() {
+                System.out.println("Cantidad de oficinas: "+this.numOfi+", Area total: "+this.AreaT+", Barrio: "+this.Barrio+", Estrato "+this.Estrato+", Valor arriendo: "+this.ValorA+", Area construida: "+this.AreaC);
+                System.out.println("Oficinas: ");
+                for(int i = 0; i<this.oficinas.size();i++){
+                oficinas.get(i).DarInfo();
+                }
+    }
     public boolean addOficinas(Oficina o){
     oficinas.add(o);        
     return true;
@@ -82,10 +89,5 @@ public class Piso extends Inmueble{
     public void setAreaC(double AreaC) {
         this.AreaC = AreaC;
     }
-    
-        @Override
-    public void DarInfo() {
-       
-    }
-    
+
 }

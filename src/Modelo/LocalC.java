@@ -19,7 +19,11 @@ public class LocalC extends Local{
         this.descripcion = descripcion;
         this.ubicacion = ubicacion;
     }
-
+    
+    @Override
+    public void DarInfo() {
+        System.out.println("Descripcion: "+this.descripcion+" ¿Está ubicado en vía principal? "+this.ubicacion+" ¿Está arrendado? "+this.arrendado+", Barrio: "+this.Barrio+", Estrato:"+this.Estrato+", Valor de arrendamiento: "+this.ValorA+", Area Construida: "+this.AreaC);
+    }
 
 
     public String getDescripcion() {
@@ -78,10 +82,7 @@ public class LocalC extends Local{
         this.AreaC = AreaC;
     }
 
-    @Override
-    public void DarInfo() {
-       
-    }
+
     
     
 }
